@@ -36,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/priceLabel"
-        android:gravity="center_vertical|center_horizontal">
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/linearLayout">
 
         <TextView
             android:layout_width="wrap_content"
@@ -61,5 +62,15 @@
 
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/busyWidget"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:layout_above="@+id/priceLabel"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
